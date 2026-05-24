@@ -1,0 +1,30 @@
+/* css/components/newsletter.css */
+
+.newsletter {
+  background: hsl(231, 69%, 60%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.newsletter__form {
+  max-width: 500px;
+  margin: 2rem auto 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.newsletter__form input {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .newsletter__form {
+    flex-direction: row;
+  }
+}

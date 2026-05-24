@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Bookmark - Landing Page</title>
+  
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+  
+</head>
+<body>
+  
+<header class="header">
+  <nav class="nav container">
+    <!-- Main Logo (visible always) -->
+    <div class="nav__logo">
+      <img src="./images/logo-bookmark.svg" alt="Bookmark">
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="nav__menu" id="nav-menu">
+      <!-- Mobile Menu Top -->
+      <div class="mobile-menu-header">
+        <img src="./images/logo-bookmark.svg" alt="Bookmark" class="nav__logo-mobile">
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <img src="./images/icon-close.svg" alt="Close" class="close-icon">
+        </button>
+      </div>
+
+      <!-- Menu Links -->
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" class="btn btn--login">Login</a></li>
+    </ul>
+
+    <!-- Hamburger Button -->
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+      <img src="./images/icon-hamburger.svg" alt="Menu" class="hamburger-icon">
+    </button>
+  </nav>
+</header>
+
+
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">A Simple Bookmark Manager</h1>
+        <p class="hero__description">
+          A clean and simple interface to organize your favourite websites. 
+          Open a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        
+        <div class="hero__cta">
+          <button class="btn btn--primary">Get it on Chrome</button>
+          <button class="btn btn--secondary">Get it on Firefox</button>
+        </div>
+      </div>
+      
+      <div class="hero__image">
+        <!-- Hero illustration -->
+        <img src="./images/illustration-hero.svg" alt="Bookmark dashboard illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites...</p>
+      </div>
+      
+      <!-- Tabs will go here -->
+    </div>
+  </section>
+
+  <!-- EXTENSIONS -->
+  <section class="extensions">
+    <div class="container">
+      <div class="section-header">
+        <h2>Download the extension</h2>
+        <p>We’ve got more browsers in the pipeline...</p>
+      </div>
+      
+      <!-- Browser cards -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs...</p>
+      </div>
+      
+      <!-- Accordion -->
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>35,000+ already joined</h2>
+      <p>Stay up-to-date with what we’re doing</p>
+      
+      <form class="newsletter__form" novalidate>
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn--primary">Contact Us</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer content -->
+    </div>
+  </footer>
+
+  <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

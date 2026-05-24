@@ -1,0 +1,48 @@
+/* css/main.css */
+
+/* Import base styles */
+@import url('base/reset.css');
+@import url('base/typography.css');
+
+/* Import components */
+@import url('components/header.css');
+@import url('components/hero.css');
+@import url('components/features.css');
+@import url('components/extensions.css');
+@import url('components/faq.css');
+@import url('components/newsletter.css');
+
+
+
+/* Global styles */
+body {
+  background-color: #fff;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn--primary {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: hsl(231, 69%, 50%);
+}
+
+.btn--secondary {
+  background-color: hsl(0, 0%, 97%);
+  color: hsl(229, 31%, 21%);
+  border: 2px solid hsl(229, 31%, 21%);
+}
+
+.btn--secondary:hover {
+  background-color: hsl(229, 31%, 21%);
+  color: white;
+}

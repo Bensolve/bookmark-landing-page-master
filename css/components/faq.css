@@ -1,0 +1,29 @@
+/* css/components/faq.css */
+
+.faq {
+  padding: 5rem 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.faq__answer {
+  display: none;
+  padding-top: 1rem;
+  color: hsl(229, 31%, 21%);
+  opacity: 0.8;
+}
+
+.faq__item.active .faq__answer {
+  display: block;
+}

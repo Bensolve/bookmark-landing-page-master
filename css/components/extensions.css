@@ -1,0 +1,32 @@
+/* css/components/extensions.css */
+
+.extensions {
+  padding: 5rem 0;
+  background-color: hsl(0, 0%, 97%);
+}
+
+.extensions__cards {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.extension-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.extension-card img {
+  width: 80px;
+  margin-bottom: 1.5rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .extensions__cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

@@ -1,0 +1,21 @@
+/* css/base/typography.css */
+h1, h2 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Mobile-first media queries will be in main.css */
