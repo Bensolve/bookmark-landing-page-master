@@ -4,17 +4,29 @@
   padding: 5rem 0;
 }
 
+.faq__list {
+  margin-bottom: 2rem ;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
 .faq__item {
   border-bottom: 1px solid #ddd;
   padding: 1.5rem 0;
+ 
 }
 
 .faq__question {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  width: 100%;
   cursor: pointer;
   font-weight: 500;
+  font-size: .925rem;
+  
 }
 
 .faq__answer {
@@ -26,4 +38,9 @@
 
 .faq__item.active .faq__answer {
   display: block;
+}
+
+.faq__more{
+  display: flex;
+  justify-content: center;
 }

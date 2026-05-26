@@ -11,7 +11,7 @@
 @import url('components/extensions.css');
 @import url('components/faq.css');
 @import url('components/newsletter.css');
-
+@import url('components/footer.css');
 
 
 /* Global styles */
@@ -21,9 +21,10 @@ body {
 
 /* Buttons */
 .btn {
-  padding: 0.9rem 1.8rem;
+  padding: 0.9rem ;
   border-radius: 5px;
   font-weight: 500;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -39,7 +40,7 @@ body {
 .btn--secondary {
   background-color: hsl(0, 0%, 97%);
   color: hsl(229, 31%, 21%);
-  border: 2px solid hsl(229, 31%, 21%);
+  
 }
 
 .btn--secondary:hover {

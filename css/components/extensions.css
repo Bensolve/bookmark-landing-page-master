@@ -5,28 +5,68 @@
   background-color: hsl(0, 0%, 97%);
 }
 
-.extensions__cards {
-  display: grid;
-  gap: 2rem;
-  margin-top: 3rem;
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
 }
 
+.extensions__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Individual Card - Using Flex for internal centering */
 .extension-card {
   background: white;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2.5rem 1.5rem;
+  display: flex;                    /* ← For centering content */
+  flex-direction: column;
+  align-items: center;              /* Centers logo, text, button horizontally */
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.extension-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Staggered effect (stairs) */
+.extension-card:nth-child(2) { 
+  margin-top: 2rem; 
+}
+.extension-card:nth-child(3) { 
+  margin-top: 4rem; 
 }
 
 .extension-card img {
-  width: 80px;
+  width: 70px;
   margin-bottom: 1.5rem;
+}
+
+.extension-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.extension-card p {
+  color: hsl(229, 31%, 21%);
+  opacity: 0.7;
+  margin-bottom: 2rem;
 }
 
 /* Desktop */
 @media (min-width: 768px) {
   .extensions__cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
   }
 }

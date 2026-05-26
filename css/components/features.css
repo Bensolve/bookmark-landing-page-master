@@ -1,7 +1,7 @@
 /* css/components/features.css */
 
 .features {
-  padding: 5rem 0;
+  padding: 5rem 0 6rem;
 }
 
 .section-header {
@@ -10,39 +10,102 @@
   margin: 0 auto 4rem;
 }
 
+.section-header h2 {
+  margin-bottom: 1rem;
+}
+
+/* ===================== TABS ===================== */
 .features__tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  flex-direction: column ;
+  margin-bottom: 4rem;
   border-bottom: 1px solid #ddd;
   flex-wrap: wrap;
+  gap: 1rem;
+ 
 }
 
 .features__tab {
-  padding: 1rem 2rem;
+  padding: 1rem 1.8rem;
   cursor: pointer;
   font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  background: none;
+  border: none;
   position: relative;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.features__tab:hover {
+  color: hsl(231, 69%, 60%);
 }
 
 .features__tab.active {
-  color: hsl(231, 69%, 60%);
+  color: hsl(231, 100%, 4%);
 }
 
 .features__tab.active::after {
   content: '';
   position: absolute;
   bottom: -1px;
-  left: 0;
-  width: 100%;
+  left: 50%;                 /* position from the parent's center */
+  transform: translateX(-50%); /* pull back by half its own width */
+  width: 30%;                /* adjust as needed – now centered */
   height: 4px;
-  background-color: hsl(231, 69%, 60%);
+  background-color: hsl(0, 78%, 51%);
 }
-
+/* Tab Content */
 .features__content {
   display: none;
 }
 
 .features__content.active {
   display: block;
+}
+
+.features__grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.features__image img {
+  max-width: 100%;
+}
+
+.features__text {
+  text-align: center;
+}
+
+.features__text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.features__text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: hsl(229, 31%, 21%);
+  opacity: 0.9;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (min-width: 768px) {
+  .features__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  
+  .features__tabs {
+    gap: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
+  .features__tab {
+    padding: 1.2rem 2.5rem;
+  }
 }

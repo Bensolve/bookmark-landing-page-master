@@ -1,0 +1,6 @@
+<svg width="148" height="32" viewBox="0 0 148 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bookmark Icon -->
+  <path d="M10 2H2C0.89543 2 0 2.89543 0 4V28C0 29.1046 0.89543 30 2 30H10C11.1046 30 12 29.1046 12 28V4C12 2.89543 11.1046 2 10 2Z" fill="white"/>
+  <!-- Text -->
+  <text x="22" y="23" font-family="Rubik, sans-serif" font-size="18" font-weight="500" fill="white">BOOKMARK</text>
+</svg>

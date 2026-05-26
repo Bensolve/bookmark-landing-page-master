@@ -1,30 +1,74 @@
 /* css/components/newsletter.css */
 
 .newsletter {
-  background: hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
   color: white;
-  padding: 4rem 0;
+  padding: 4.5rem 1rem;
   text-align: center;
 }
 
+/* .newsletter__content {
+  
+
+  border: 2px solid red;
+} */
+
+.newsletter__title {
+  font-size: .65rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+ 
+}
+
+.newsletter__subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+
 .newsletter__form {
-  max-width: 500px;
-  margin: 2rem auto 0;
   display: flex;
   gap: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
   flex-direction: column;
 }
 
-.newsletter__form input {
-  padding: 1rem;
+.newsletter__input {
+  padding: 1.1rem 1rem;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
+}
+
+.newsletter__input:focus {
+  outline: 3px solid hsl(0, 94%, 66%);
+}
+
+/* Newsletter Red Button */
+.btn--red {
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+}
+
+.btn--red:hover {
+  background-color: hsl(0, 94%, 55%);
 }
 
 /* Desktop */
 @media (min-width: 768px) {
   .newsletter__form {
     flex-direction: row;
+  }
+  
+  .newsletter__title {
+    font-size: 2rem;
+  }
+  
+  .newsletter__subtitle {
+    font-size: 1.35rem;
   }
 }
